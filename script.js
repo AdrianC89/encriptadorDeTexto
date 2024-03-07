@@ -21,7 +21,7 @@ function btnEncriptar() {
 
 function btnDesencriptar() {
     tituloZorro.textContent = "Zorrest Poirot Desencriptó el mensaje!";
-    estadoMensaje.textContent = "¡Zorro astuto en acción! Mensaje descifrado, ¿quién necesita lecciones de astucia?";
+    estadoMensaje.textContent = "¡Zorrest en acción! Mensaje descifrado, ¿quién necesita lecciones de astucia?";
     estadoMensaje.style.marginBottom = "3%"
     const textoDesencriptado = desencriptar(textArea.value);
     mensaje.querySelector('#textoDesencriptado').innerHTML = `<p>${textoDesencriptado}</p>`;
@@ -46,10 +46,9 @@ function encriptar(stringEncriptada){
 function desencriptar(stringDesencriptada){
     let matrizCodigo = [["e", "enter"], ["i","imes"],["a","ai"], ["o","ober"], ["u","ufat"]];
     stringDesencriptada = stringDesencriptada.toLowerCase()
-
-    for(let i = 0; i < matrizCodigo.length; i++){
-        if(stringDesencriptada.includes(matrizCodigo[i][0])){
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+    for (let i = matrizCodigo.length - 1; i >= 0; i--) {
+        if (stringDesencriptada.includes(matrizCodigo[i][1])) {
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
         }
     }
     return stringDesencriptada
