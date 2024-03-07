@@ -1,0 +1,170 @@
+* {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url(/imagenes/cartoon-background-jungle-forest-free-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta según tus preferencias */
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden; /* Puede ayudar a evitar el desplazamiento horizontal */
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: hidden; /* Añade esta línea */
+    flex-wrap: wrap; /* Agrega esta línea para permitir el ajuste de fila */
+
+}
+
+.text-area {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder { color:#2f3733; font-size: 18px; padding: 0.5rem; } 
+    .text-area:focus {
+        outline: none;
+        padding: 0.5rem;
+    }
+
+
+.mensajeDescifrado {
+ position: relative;
+ float: left;
+ width: 40%;
+ min-width: 300px;
+}
+.zorroPensando {
+    width: 40%;
+    min-width: 300px;
+    min-height: 475px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 24px;
+    color: #05550d;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+.zorroPensando h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.zorroPensando h6 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30%;
+}
+
+.imagenzorro {
+ width: 60%;
+ margin-top: 30%;
+}
+
+
+.text-area {
+    max-width: 80%; 
+    min-width: 80%;
+    min-height: 350px;
+    max-height: 45%;
+    box-sizing: border-box; 
+}
+
+.mensajeEscrito {
+    float: left;
+    width: 60%;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: #D8Dfe8;
+    border: 1px solid #13710a;
+    border-radius: 24px;
+    color: #13710a;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #13710a;
+    border: 1px solid #13710a;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar {
+    margin-top: 18px;
+    border: 1px solid #13710a;
+    border-radius: 24px;
+    color: #13710a;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+}
+.informacion {
+    color: #e6ebf1;
+    font-size: 18px;
+    text-shadow: 1.5px 1.5px 1px rgb(10, 10, 10);
+}
+
+.mensaje-copiado {
+    position: fixed;
+    top: 10px;
+    right: 50%;
+    background-color: #13710a;
+    color: white;
+    padding: 15px;
+    border-radius: 24px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.solucionZorro {
+    display: none;
+    display: none;
+    position: absolute;
+    width: 35%;
+    bottom: 20%;
+    right: 26%;
+}
+
+.encabezadoMensaje {
+    font-size: 25px;
+    font-weight: bold;
+}
+ 

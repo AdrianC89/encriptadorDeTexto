@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagenes/image.png" alt="Logo de Alura" class="logo">
+    </header>
+
+    <main>
+        <section class="mensajeEscrito">
+            <textarea class="text-area" cols="30" rows="10" placeholder= "Ingresa el texto Aqui"></textarea>
+        <div>
+            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+        </section>
+        <section class="mensajeDescifrado">
+            <div class="zorroPensando">
+                <img src="/imagenes/zorropensando.png" alt="zorro" class="imagenzorro">
+                <br>
+                <div class="contenido">
+                    <h3 id="tituloZorro">Zorrest Poirot está pensando...</h3>
+                    <h6 id="accionZorro">Aún no encuentra un mensaje que descifrar</h6>
+                    <div class="textoDesencriptado" id="textoDesencriptado"></div>
+                </div>  
+            </div>
+            <img src="imagenes/solucionzorro.png" alt="" class="solucionZorro">
+            <div>
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src="/script.js" ></script>
+</body>
+</html>
