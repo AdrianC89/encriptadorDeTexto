@@ -99,11 +99,20 @@ main {
     font-weight: 500;
     margin-bottom: 30%;
 }
+.enojozorro {
+    display: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 30%;
+    
+}
 
 .imagenzorro {
  width: 60%;
  margin-top: 30%;
 }
+
+
 
 
 .text-area {
@@ -124,40 +133,43 @@ main {
 
 .botones {
     display: flex;
-    
     align-items: center; /* Centra los elementos verticalmente */
     margin-top: 18px;
 }
 
 .btn-desencriptar {
-    background: #D8Dfe8;
-    border: 1px solid #13710a;
+    background: #73632e;
+    border: none;
     border-radius: 24px;
-    color: #13710a;
+    color: #ddd1b6;
     cursor: pointer;
     height: 50px;
     margin-left: 30px;
     width: 328px;
+    box-shadow: inset  0px -5px #372e03;
 }
 
 .btn-encriptar {
-    background-color: #13710a;
-    border: 1px solid #13710a;
+    background-color: #268c1d;
+    border: none;
     border-radius: 24px;
-    color: white;
+    color: rgb(223, 244, 213);
     cursor: pointer;
     height: 50px;
     width: 200px;
+    box-shadow: inset  0px -5px #084514;
 }
 
 .btn-copiar {
+    background-color: #db5f0d;
     margin-top: 18px;
-    border: 1px solid #13710a;
+    border: none;
     border-radius: 24px;
-    color: #13710a;
+    color: #dcc9a5;
     cursor: pointer;
     height: 50px;
     width: 200px;
+    box-shadow: inset  0px -5px #713007;
 }
 .informacion {
     color: #e6ebf1;

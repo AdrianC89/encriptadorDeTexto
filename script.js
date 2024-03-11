@@ -4,31 +4,61 @@ const imagenZorro = document.querySelector(".imagenzorro");
 const solucion = document.querySelector(".solucionZorro");
 const tituloZorro = document.getElementById('tituloZorro');
 const estadoMensaje = document.getElementById('accionZorro');
+const sinMensaje = document.querySelector(".enojozorro")
+
 
 
 
 
 function btnEncriptar() {
-    tituloZorro.textContent = "Zorrest Poirot Encriptó el mensaje!";
-    estadoMensaje.textContent = "¡El mensaje ahora es un enigma digno de un zorro detectivesco!";
-    estadoMensaje.style.marginBottom = "3%"
-    const textoEncriptado = encriptar(textArea.value);
-    mensaje.querySelector('#textoDesencriptado').innerHTML = `<p>${textoEncriptado}</p>`;
-    textArea.value = "";
-    imagenZorro.style.display = 'none';
-    solucion.style.display = 'block';
+    if (textArea.value.trim() === "") {
+        if (mensaje.querySelector('#textoDesencriptado').textContent.trim() !== "") {
+            mensaje.querySelector('#textoDesencriptado').innerHTML = "";
+        }
+        tituloZorro.textContent = "¡Ups! No hay mensaje para encriptar";
+        estadoMensaje.textContent = "Soy un zorro muy ocupado!! no me hagas perder el tiempo...";
+        estadoMensaje.style.marginBottom = "3%";
+        imagenZorro.style.display = 'none';
+        sinMensaje.style.display = 'block';
+        solucion.style.display = 'none';
+
+    } else {
+        tituloZorro.textContent = "Zorrest Poirot Encriptó el mensaje!";
+        estadoMensaje.textContent = "¡El mensaje ahora es un enigma digno de un zorro detectivesco!";
+        estadoMensaje.style.marginBottom = "3%";
+        const textoEncriptado = encriptar(textArea.value);
+        mensaje.querySelector('#textoDesencriptado').innerHTML = `<p>${textoEncriptado}</p>`;
+        textArea.value = "";
+        sinMensaje.style.display = 'none';
+        imagenZorro.style.display = 'none';
+        solucion.style.display = 'block';
+    }
 }
 
 function btnDesencriptar() {
-    tituloZorro.textContent = "Zorrest Poirot Desencriptó el mensaje!";
-    estadoMensaje.textContent = "¡Zorrest en acción! Mensaje descifrado, ¿quién necesita lecciones de astucia?";
-    estadoMensaje.style.marginBottom = "3%"
-    const textoDesencriptado = desencriptar(textArea.value);
-    mensaje.querySelector('#textoDesencriptado').innerHTML = `<p>${textoDesencriptado}</p>`;
-    textArea.value = "";
-    imagenZorro.style.display = 'none';
-    solucion.style.display = 'block';
+    if (textArea.value.trim() === "") {
+        if (mensaje.querySelector('#textoDesencriptado').textContent.trim() !== "") {
+            mensaje.querySelector('#textoDesencriptado').innerHTML = "";
+        }
+        tituloZorro.textContent = "¡Ups! No hay mensaje para desencriptar";
+        estadoMensaje.textContent = "Soy un zorro muy ocupado!! no me hagas perder el tiempo...";
+        estadoMensaje.style.marginBottom = "3%";
+        imagenZorro.style.display = 'none';
+        sinMensaje.style.display = 'block';
+        solucion.style.display = 'none';
+    } else {
+        tituloZorro.textContent = "Zorrest Poirot Desencriptó el mensaje!";
+        estadoMensaje.textContent = "¡Zorrest en acción! Mensaje descifrado, ¿quién necesita lecciones de astucia?";
+        estadoMensaje.style.marginBottom = "3%";
+        const textoDesencriptado = desencriptar(textArea.value);
+        mensaje.querySelector('#textoDesencriptado').innerHTML = `<p>${textoDesencriptado}</p>`;
+        textArea.value = "";
+        sinMensaje.style.display = 'none';
+        imagenZorro.style.display = 'none';
+        solucion.style.display = 'block';
+    }
 }
+
 
 
 function encriptar(stringEncriptada){
