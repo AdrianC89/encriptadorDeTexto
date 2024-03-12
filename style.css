@@ -18,9 +18,9 @@ body {
 .logo {
     float: left;
     padding-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 20px;
-    width: 2%;
+    width: 5%;
 }
 
 header {
@@ -148,6 +148,13 @@ main {
     width: 328px;
     box-shadow: inset  0px -5px #372e03;
 }
+.btn-desencriptar:hover {
+    background-color: #9b863e /* Cambio de color en el hover */
+  }
+  
+  .btn-desencriptar:active {
+    background-color: #372e03; /* Cambio de color al hacer clic */
+  }
 
 .btn-encriptar {
     background-color: #268c1d;
@@ -159,6 +166,14 @@ main {
     width: 200px;
     box-shadow: inset  0px -5px #084514;
 }
+
+.btn-encriptar:hover {
+    background-color: #47ac3e /* Cambio de color en el hover */
+  }
+  
+.btn-encriptar:active {
+    background-color: #084514; /* Cambio de color al hacer clic */
+  }
 
 .btn-copiar {
     background-color: #db5f0d;
@@ -188,6 +203,14 @@ main {
     opacity: 0.9;
     z-index: 1;
 }
+
+.btn-copiar:hover {
+    background-color: #da7532 /* Cambio de color en el hover */
+  }
+  
+.btn-copiar:active {
+    background-color: #713007; /* Cambio de color al hacer clic */
+  }
 
 .solucionZorro {
     display: none;

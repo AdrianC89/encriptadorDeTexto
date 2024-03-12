@@ -21,6 +21,7 @@ function btnEncriptar() {
         imagenZorro.style.display = 'none';
         sinMensaje.style.display = 'block';
         solucion.style.display = 'none';
+        textArea.value = "";
 
     } else {
         tituloZorro.textContent = "Zorrest Poirot Encriptó el mensaje!";
@@ -46,6 +47,7 @@ function btnDesencriptar() {
         imagenZorro.style.display = 'none';
         sinMensaje.style.display = 'block';
         solucion.style.display = 'none';
+        textArea.value = "";
     } else {
         tituloZorro.textContent = "Zorrest Poirot Desencriptó el mensaje!";
         estadoMensaje.textContent = "¡Zorrest en acción! Mensaje descifrado, ¿quién necesita lecciones de astucia?";
