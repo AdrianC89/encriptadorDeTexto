@@ -248,3 +248,39 @@ main {
 .footer-page img:hover {
  transform: scale(1.1);
 }
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .text-area {
+        width: 90%;
+    }
+    .btn-desencriptar, .btn-copiar, .btn-encriptar {
+        font-size: 14px;
+        height: 40px;
+        width: 120px;
+        border-radius: 15px;
+    }
+
+    .informacion {
+        font-size: 11px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+    /* Agrega cualquier otro estilo necesario para que la interfaz se vea bien en pantallas pequeñas */
+}
+
+/* Estilos para pantallas de hasta 1024px de ancho */
+@media (max-width: 1024px) {
+    /* Agrega estilos específicos para esta resolución si es necesario */
+}
+
+/* Estilos para pantallas más grandes de 1024px de ancho */
+@media (min-width: 1025px) {
+    /* Agrega estilos específicos para esta resolución si es necesario */
+}
